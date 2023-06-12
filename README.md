@@ -1,5 +1,15 @@
 # quiz
 
+# Quiz-App
+Quiz Application
+
+![alt text](https://github.com/kawthar-bensalah/Quiz-App/blob/master/screen-01.png)
+
+![alt text](https://github.com/kawthar-bensalah/Quiz-App/blob/master/screen-02.png)
+
+![alt text](https://github.com/kawthar-bensalah/Quiz-App/blob/master/screen-03.png)
+
+
 ## Project setup
 ```
 npm install
