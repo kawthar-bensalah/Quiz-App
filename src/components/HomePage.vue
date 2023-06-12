@@ -105,7 +105,7 @@ button:hover {
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px) {
+@media screen and (max-width: 568px) {
   .Home-container {
     width: 20rem;
     height: 30rem;
@@ -127,7 +127,7 @@ button:hover {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 900px) {
   .Home-container {
     width: 20rem;
     height: 30rem;
@@ -135,7 +135,7 @@ button:hover {
   }
 
   .Home-container h1 {
-    top: 35%;
+    top: 25%;
     right: 50%;
     font-size: 7em;
     font-weight: 700;
@@ -144,7 +144,7 @@ button:hover {
   button {
     width: 8rem;
     height: 5rem;
-    top: 70%;
+    top: 60%;
     right: 40%;
   }
 }

@@ -186,7 +186,7 @@ button {
 
 
 /* For medium devices */
-@media screen and (min-width: 568px){
+@media screen and (max-width: 900px){
 
 
 .modal {
