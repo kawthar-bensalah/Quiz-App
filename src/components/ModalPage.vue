@@ -36,10 +36,10 @@ export default {
 .modal {
   text-align: center;
   background-color: white;
-  height: 50rem;
-  width: 80rem;
-  margin-top: 10%;
-  padding: 60px 0;
+  height: 40rem;
+  width: 50rem;
+  margin-top: 5%;
+  padding: 40px 0;
   border-radius: 20px;
   border-radius: 35px;
   display: flex;
@@ -80,23 +80,23 @@ p {
 }
 
 .timer {
-  font-size: 3em;
-  font-weight: 400;
-  top: 45%;
+  font-size: 2em;
+  font-weight: 300;
+  top: 35%;
   right: 50%;
 }
 
 .score {
   font-size: 3em;
   font-weight: 400;
-  top: 35%;
+  top: 25%;
   right: 50%;
 }
 .result {
   text-transform: uppercase;
   font-size: 6em;
   font-weight: 600;
-  top: 20%;
+  top: 10%;
   right: 50%;
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
     1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
@@ -107,9 +107,9 @@ p {
 }
 
 .message {
-  font-size: 2em;
-  font-weight: 400;
-  top: 55%;
+  font-size: 1.5em;
+  font-weight: 200;
+  top: 45%;
   right: 50%;
 }
 
@@ -119,8 +119,8 @@ button {
   font-family: verdana;
   height: 10rem;
   position: absolute;
-  top: 72%;
-  right: 45%;
+  top: 62%;
+  right: 44%;
   margin: 0 auto;
   border-radius: 25px;
   background-color: #a6d0dd;

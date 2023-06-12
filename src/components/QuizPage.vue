@@ -6,14 +6,14 @@
     <!-- Quiz Question Container -->
     <div class="Quiz-question-container">
       <h1 id="display-question">
-        {{ questionCounter }}. {{ currentQuestion.question }}
+        {{ questionCounter }}. {{ formattedQuestion }}
       </h1>
     </div>
 
     <!-- OPTIONS CONTAINER  -->
     <div class="Quiz-options-container">
       <div
-        v-for="(choice, item) in currentQuestion.choices"
+        v-for="(choice, item) in formattedOptions"
         :key="item"
         :ref="optionChosen"
         @click="onOptionClicked(choice, item)"
@@ -34,6 +34,20 @@
 import { ref, onMounted } from "vue";
 import ModalPage from "@/components/ModalPage.vue";
 export default {
+
+  computed: {
+    formattedQuestion() {
+        return this.currentQuestion.question.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+        .replace(/&apos;/g, "'").replace(/&quot;/g, '"').replace(/&#039;/g, "'").replace(/&nbsp;/g, " ").replace(/&#47;/g, "/")
+        .replace(/&#x2F;/g, "/").replace(/x27;/g, "'").replace(/&#39;/g, "'");
+    },
+    formattedOptions() {
+     return this.currentQuestion.choices.map(choice => choice.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+        .replace(/&apos;/g, "'").replace(/&quot;/g, '"').replace(/&#039;/g, "'").replace(/&nbsp;/g, " ").replace(/&#47;/g, "/")
+        .replace(/&#x2F;/g, "/").replace(/x27;/g, "'").replace(/&#39;/g, "'"));
+    }
+
+  },
   components: { ModalPage },
   setup() {
     let showModal = ref(false);
