@@ -71,4 +71,81 @@ button:hover {
   color: #a6d0dd;
   background-color: white;
 }
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}
+
+/* For small devices (iphones) */
+@media screen and (max-width: 428px) {
+  .Home-container {
+    width: 20rem;
+    height: 30rem;
+    margin: 2% auto 0;
+  }
+
+  .Home-container h1 {
+    top: 35%;
+    right: 50%;
+    font-size: 4em;
+    font-weight: 500;
+  }
+
+  button {
+    width: 8rem;
+    height: 5rem;
+    top: 60%;
+    right: 32%;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px) {
+  .Home-container {
+    width: 20rem;
+    height: 30rem;
+    margin: 2% auto 0;
+  }
+
+  .Home-container h1 {
+    top: 35%;
+    right: 50%;
+    font-size: 7em;
+    font-weight: 700;
+  }
+
+  button {
+    width: 8rem;
+    height: 5rem;
+    top: 70%;
+    right: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .Home-container {
+    width: 20rem;
+    height: 30rem;
+    margin: 2% auto 0;
+  }
+
+  .Home-container h1 {
+    top: 35%;
+    right: 50%;
+    font-size: 7em;
+    font-weight: 700;
+  }
+
+  button {
+    width: 8rem;
+    height: 5rem;
+    top: 70%;
+    right: 40%;
+  }
+}
 </style>

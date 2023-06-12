@@ -4,8 +4,8 @@
     <div class="modal">
       <!-- Pass / Fail -->
       <p class="result">{{ result }}</p>
-      <p class="score">Your Score : {{ score }} / 10</p>
-      <p class="timer">You spent : {{ timer }}</p>
+      <p class="score">Your Score: {{ score }} / 10</p>
+      <p class="timer">You spent: {{ timer }}</p>
       <p class="message">
         You did a great job, learn more by taking another quiz
       </p>
@@ -40,30 +40,10 @@ export default {
   width: 50rem;
   margin-top: 5%;
   padding: 40px 0;
-  border-radius: 20px;
   border-radius: 35px;
   display: flex;
   align-content: center;
 }
-.close {
-  margin: 10% 0 0 16px;
-  cursor: pointer;
-}
-
-.close-img {
-  width: 25px;
-}
-
-.check {
-  width: 150px;
-}
-
-h6 {
-  font-weight: 500;
-  font-size: 28px;
-  margin: 20px 0;
-}
-
 p {
   font-size: 16px;
   margin: 20px 0;
@@ -73,7 +53,6 @@ p {
   position: absolute;
   transform: translate(50%, -50%);
   margin: 5% auto 0;
-
   font-family: verdana;
   text-align: center;
   color: #ff6969;
@@ -139,5 +118,124 @@ button:hover {
   cursor: pointer;
   color: #a6d0dd;
   background-color: white;
+}
+
+
+/*==================== MEDIA QUERIES ====================*/
+
+@media screen and (max-width: 428px) {
+
+  .modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.modal {
+  height: 48rem;
+  width: 20rem;
+  margin-top: 7%;
+  padding: 10px;
+  display: flex;
+  align-content: center;
+}
+
+.modal p {
+  position: absolute;
+  margin: 5% auto 0;
+}
+
+.timer {
+  font-size: 2em;
+  font-weight: 500;
+  top: 42%;
+}
+
+.score {
+  font-size: 2em;
+  font-weight: 500;
+  top: 25%;
+  right: 50%;
+}
+.result {
+  font-size: 2em;
+  font-weight: 300;
+  top: 10%;
+  right: 50%;
+}
+
+.message {
+  font-size: 1.5em;
+  font-weight: 200;
+  top: 60%;
+}
+
+button {
+  width: 7rem;
+  height: 5rem;
+  top: 75%;
+  right: 35%;
+  font-size: 20px;
+}
+ 
+}
+
+
+/* For medium devices */
+@media screen and (min-width: 568px){
+
+
+.modal {
+  height: 48rem;
+  width: 40rem;
+  margin-top: 7%;
+  padding: 10px;
+  display: flex;
+  align-content: center;
+}
+
+.modal p {
+  position: absolute;
+  margin: 5% auto 0;
+}
+
+.timer {
+  font-size: 2em;
+  font-weight: 500;
+  top: 27%;
+}
+
+.score {
+  font-size: 2em;
+  font-weight: 500;
+  top: 20%;
+  right: 50%;
+}
+.result {
+  font-size: 2em;
+  font-weight: 300;
+  top: 10%;
+  right: 50%;
+}
+
+.message {
+  font-size: 1.5em;
+  font-weight: 200;
+  top: 40%;
+}
+
+button {
+  width: 7rem;
+  height: 5rem;
+  top: 55%;
+  right: 42%;
+  font-size: 20px;
+}
+ 
+   
 }
 </style>

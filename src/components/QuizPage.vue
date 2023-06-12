@@ -297,37 +297,6 @@ span label {
   font-weight: 600;
 }
 
-.next-button-container {
-  width: 50%;
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-}
-
-.next-button-container button {
-  width: 8rem;
-  text-transform: uppercase;
-  font-family: verdana;
-  height: 5rem;
-  border-radius: 25px;
-  background-color: #a6d0dd;
-  color: white;
-  font-size: 35px;
-  border: 2px solid #a6d0dd;
-  cursor: pointer;
-  outline: none;
-  box-shadow: rgba(96, 104, 114, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  transition: 0.2s ease-in-out 0s;
-}
-
-.next-button-container button:hover {
-  cursor: pointer;
-  color: #a6d0dd;
-  background-color: white;
-}
-
 .option-correct {
   background-color: green;
 }
@@ -353,5 +322,45 @@ span label {
     1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
     1px 22px 10px rgba(16, 16, 16, 0.5), 1px 25px 35px rgba(16, 16, 16, 0),
     1px 30px 60px rgba(16, 16, 16, 0);
+}
+
+
+
+
+/*==================== MEDIA QUERIES ====================*/
+
+@media screen and (max-width: 428px) {
+ .Quiz-container {
+  width: 20rem;
+  height: 35rem;
+  margin-top: 5%;
+}
+
+.Quiz-question-container {
+  width: 70%;
+  height: 12rem;
+  margin: 5%;
+}
+
+.Quiz-options-container {
+  width: 80%;
+  height: 17rem;
+  display: inline-block;
+}
+
+.Quiz-options-container div {
+  width: 100%;
+  height: 3rem;
+  margin: 5% auto 0;
+}
+
+#quiz-title {
+  position: absolute;
+  top: 2%;
+  right: 50%;
+  margin: 5% auto 0;
+  font-size: 5em;
+  font-weight: 500;
+}
 }
 </style>
